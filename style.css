@@ -1,0 +1,109 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+h1, h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="number"],
+select {
+    width: calc(100% - 22px); /* Учет padding и border */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Учитывает padding и border в общей ширине */
+}
+
+input[type="number"]:focus,
+select:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#clear-button {
+    background-color: #95a5a6;
+}
+
+#clear-button:hover {
+    background-color: #7f8c8d;
+}
+
+#monte-carlo-button {
+    background-color: #e74c3c;
+}
+
+#monte-carlo-button:hover {
+    background-color: #c0392b;
+}
+
+#result-area {
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+#result-text,
+#monte-carlo-text {
+    color: #2c3e50;
+    font-size: 1.1em;
+    font-weight: bold;
+    background-color: #ecf0f1;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.chart-container {
+    position: relative;
+    height: 40vh; /* Высота графика */
+    width: 100%; /* Ширина графика */
+    margin: 20px auto; /* Центрирование */
+    box-sizing: border-box;
+}
+
+canvas {
+    display: block; /* Убирает лишний отступ снизу */
+    width: 100% !important; /* Важно для правильного масштабирования */
+    height: 100% !important; /* Важно для правильного масштабирования */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
